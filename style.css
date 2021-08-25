@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgimg.jpg);
+    background-size: cover;
+    background-position:center ;
+}
