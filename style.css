@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 *{
     padding: 0%;
     margin: 0%;
     font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
 }
 .banner{
     width: 100%;
@@ -10,4 +12,42 @@
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgimg.jpg);
     background-size: cover;
     background-position:center ;
+}
+h1{
+   font-size: 55px;
+   color: rgb(215, 250, 231);
+    cursor: pointer;
+    font-family: 'Rampart One', cursive;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#009688;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
 }
