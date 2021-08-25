@@ -51,3 +51,50 @@ h1{
 .navbar ul li:hover:after{
     width: 100%;
 }
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h2{
+    font-size: 55px;
+    margin-top:80px ;
+} 
+.content p{
+    margin-top: 20px auto;
+    font-weight: 200;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 195, 255);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:rgb(0, 195, 255) ;
+    height: 100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5.s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
